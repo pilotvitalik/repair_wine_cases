@@ -1,0 +1,106 @@
+@roboto: Roboto;
+@robotoC: Roboto Condensed;
+@bdef: solid 1px red;
+
+body,
+.wrapper{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: auto;
+}
+.header{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	height: 461px;
+	margin: 0;
+	background: url(../img/header_desktop_m.jpg) no-repeat;
+	background-size: cover;
+	.menu{
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 56px;
+		padding: 0;
+		background: rgba(0,0,0,0.45);
+		h4{
+			display: inline-block;
+			margin: 9px 0 0 15px;
+			color: #fff;
+			font-family: @robotoC;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 14px;
+			height: auto;
+		}
+		p{
+			display: inline-block;
+			margin: 2px 0 0 15px;
+			color: #fff;
+			font-family: @robotoC;
+			font-weight: normal;
+			font-size: 13px;
+			height: auto;
+		}
+		div{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			position: absolute;
+			width: 21px;
+			height: 18.73px;
+			top: 17.14px;
+			right: 15px;
+			span{
+				display: inline-block;
+				width: 100%;
+				height: 3px;
+				background: #fff;
+			}		
+		}
+		.navmenu{
+			display: none;
+		}
+	}
+	&>h4{
+		display: inline-block;
+		padding: 0;
+		margin: 70px 0 7px 0;
+		color: #fff;
+		font-family: @robotoC;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 19px;
+		letter-spacing: 0.05em;
+		text-align: center;
+	}
+	h3{
+		display: inline-block;
+		margin: 0 auto;
+		color: #fff;
+		font-family: @robotoC;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 32px;
+		line-height: 37px;
+		letter-spacing: 0.08em;
+		text-align: center;
+	}
+	button{
+		width: 165px;
+		height: 41px;
+		margin: 26px auto 0 auto;
+		border: solid 2px #fff;
+		border-radius: 2px;
+		box-sizing: border-box;
+		background: transparent;
+		color: #fff;
+		font-family: @robotoC;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 14px;
+	}
+}
