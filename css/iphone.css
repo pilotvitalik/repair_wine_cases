@@ -1,3 +1,50 @@
+.input {
+  width: 246px;
+  height: 40px;
+  padding-left: 13px;
+  margin: 0 15px;
+  background: #f8f6f6;
+  border: solid 1px #e2dede;
+  border-radius: 2px;
+}
+.input::-webkit-input-placeholder {
+  color: #000;
+  font-family: Roboto Condensed;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+}
+.input:-ms-input-placeholder {
+  color: #000;
+  font-family: Roboto Condensed;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+}
+.input::-ms-input-placeholder {
+  color: #000;
+  font-family: Roboto Condensed;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+}
+.input::placeholder {
+  color: #000;
+  font-family: Roboto Condensed;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+}
+.button {
+  width: 259px;
+  height: 40px;
+  margin: 0 auto;
+  background: #8C0014;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  border: none;
+}
 body,
 .wrapper {
   padding: 0;
@@ -113,3 +160,54 @@ body,
   font-weight: bold;
   font-size: 14px;
 }
+.order1 {
+  display: block;
+  position: relative;
+  width: 289px;
+  height: 436px;
+  padding: 0;
+  margin: -102px auto 0 auto;
+  background: #fff;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+.order1 h3 {
+  margin: 27px 0 0 0;
+  height: 50px;
+  color: #000;
+  font-family: Roboto Condensed;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.order1 p {
+  margin: 0 0 26px 0;
+  height: 20px;
+  color: #000;
+  font-family: Roboto Condensed;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.order1 label:nth-child(4) input {
+  margin: 20px 15px;
+}
+.order1 label:nth-child(5) textarea {
+  height: 71px;
+  padding: 12px 0 0 12px;
+}
+.order1 button {
+  margin: 26px 15px 0 15px;
+  color: #FFF;
+  font-family: Roboto Condensed;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=iphone.css.map */
