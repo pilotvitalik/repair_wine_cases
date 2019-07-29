@@ -46,7 +46,8 @@
   border: none;
 }
 body,
-.wrapper {
+.wrapper,
+.common {
   padding: 0;
   margin: 0;
   width: 100%;
@@ -173,7 +174,9 @@ body,
   border-radius: 4px;
 }
 .order1 h3 {
+  display: inline-block;
   margin: 27px 0 0 0;
+  width: 100%;
   height: 50px;
   color: #000;
   font-family: Roboto Condensed;
@@ -209,5 +212,73 @@ body,
   line-height: 15px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+.whyWe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 290px;
+  height: 572px;
+  padding: 0;
+  margin: 38px auto 0 auto;
+}
+.whyWe h3 {
+  display: inline-block;
+  margin: 0 0 27px 0;
+  width: 100%;
+  color: #000;
+  font-family: Roboto Condensed;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.whyWe .whyWeDescription {
+  display: block;
+  position: relative;
+  width: inherit;
+  height: auto;
+  padding: 0;
+}
+.whyWe .whyWeDescription img {
+  float: left;
+  width: 44px;
+  height: 44px;
+}
+.whyWe .whyWeDescription h4 {
+  float: right;
+  display: inline-block;
+  width: 231px;
+  margin: 0;
+  color: #000;
+  font-family: Roboto Condensed;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+}
+.whyWe .whyWeDescription p {
+  float: right;
+  display: inline-block;
+  position: relative;
+  margin: 13px 0 0 0;
+  width: 231px;
+  color: #000;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+}
+.whyWe .whyWeDescription:nth-child(3) {
+  margin: 16px 0 18px 0;
 }
 /*# sourceMappingURL=iphone.css.map */
