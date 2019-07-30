@@ -27,6 +27,18 @@
 	border-radius: 2px;
 	border: none;
 }
+.buttonText{
+	color: #FFF;
+	font-family: @robotoC;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 15px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+
 .colorTable{
 	width: 100%;
 	background: #FFF;
@@ -37,9 +49,6 @@
 .colorTable-dark{
 	background: #F8F6F6;
 }
-.border-down{
-			border-bottom: solid 2px #E5E5E5;
-		}
 
 body,
 .wrapper,
@@ -351,14 +360,6 @@ body,
 	}
 	button{
 		margin: 32px auto 0 auto;
-		color: #FFF;
-		font-family: @robotoC;
-		font-weight: bold;
-		font-size: 13px;
-		line-height: 15px;
-		text-align: center;
-		letter-spacing: 0.05em;
-		text-transform: uppercase;
 	}
 }
 .opinion{
@@ -463,5 +464,102 @@ body,
 			margin: 0;
 			border: none;
 		}
+	}
+}
+.answers{
+	width: 100%;
+	height: 1000px;
+	background: #F8F6F6;
+	h4{
+		display: inline-block;
+		width: 100%;
+		margin: 38px 0 35px 0;
+		color: #000;
+		font-family: @roboto;
+		font-weight: bold;
+		font-size: 21px;
+		line-height: 25px;
+		text-align: center;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+	}
+	&>div{
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		width: 290px;
+		height: 764px;
+		margin: 0 auto;
+		background: #FFF;
+		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+		border-radius: 4px;
+		.heigth74{
+			height: 74px;
+		}
+		.heigth55{
+			height: 55px;
+		}
+		.heigthAuto{
+			height: auto;
+		}
+		div{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			position: relative;
+			width: 100%;
+			border-bottom: solid 1px  #E5E5E5;
+			p{
+				padding: 0;
+				margin: 0;
+				position: relative;
+			}
+			p:first-child{
+				width: 29px;
+				height: 26px;
+				padding-left: 10px;
+				padding-top: 19px;
+				color: #DEDDDD;
+				font-family: @roboto;
+				font-style: normal;
+				font-weight: 900;
+				font-size: 22px;
+				line-height: 26px;
+				text-transform: uppercase;
+			}
+			p:nth-child(2){
+				width: 243px;
+				padding-left: 8px;
+				padding-top: 18px;
+				color: #000;
+				font-family: @robotoC;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 19px;
+				letter-spacing: 0.05em;
+			}
+			.playNone{
+				display: none;
+			}
+			.colorActive{
+				color: #8C0014 !important;
+			}
+			.pActive{
+				width: 230px;
+				height: auto;
+				margin: 12px 0 12px 47px;
+				color: #000;
+				font-family: @robotoC;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 20px;
+				letter-spacing: 0.05em;
+			}
+		}
+	}
+	button{
+		width: 290px;
+		margin: 32px 17.5px 41px 17.5px;
 	}
 }

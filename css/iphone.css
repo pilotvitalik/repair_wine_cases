@@ -45,6 +45,16 @@
   border-radius: 2px;
   border: none;
 }
+.buttonText {
+  color: #FFF;
+  font-family: Roboto Condensed;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
 .colorTable {
   width: 100%;
   background: #FFF;
@@ -55,9 +65,6 @@
 }
 .colorTable-dark {
   background: #F8F6F6;
-}
-.border-down {
-  border-bottom: solid 2px #E5E5E5;
 }
 body,
 .wrapper,
@@ -402,14 +409,6 @@ body,
 }
 .price button {
   margin: 32px auto 0 auto;
-  color: #FFF;
-  font-family: Roboto Condensed;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 15px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
 }
 .opinion {
   display: -webkit-box;
@@ -528,5 +527,114 @@ body,
   width: 97px;
   margin: 0;
   border: none;
+}
+.answers {
+  width: 100%;
+  height: 1000px;
+  background: #F8F6F6;
+}
+.answers h4 {
+  display: inline-block;
+  width: 100%;
+  margin: 38px 0 35px 0;
+  color: #000;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.answers > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 290px;
+  height: 764px;
+  margin: 0 auto;
+  background: #FFF;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+.answers > div .heigth74 {
+  height: 74px;
+}
+.answers > div .heigth55 {
+  height: 55px;
+}
+.answers > div .heigthAuto {
+  height: auto;
+}
+.answers > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  border-bottom: solid 1px  #E5E5E5;
+}
+.answers > div div p {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.answers > div div p:first-child {
+  width: 29px;
+  height: 26px;
+  padding-left: 10px;
+  padding-top: 19px;
+  color: #DEDDDD;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.answers > div div p:nth-child(2) {
+  width: 243px;
+  padding-left: 8px;
+  padding-top: 18px;
+  color: #000;
+  font-family: Roboto Condensed;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+}
+.answers > div div .playNone {
+  display: none;
+}
+.answers > div div .colorActive {
+  color: #8C0014 !important;
+}
+.answers > div div .pActive {
+  width: 230px;
+  height: auto;
+  margin: 12px 0 12px 47px;
+  color: #000;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+}
+.answers button {
+  width: 290px;
+  margin: 32px 17.5px 41px 17.5px;
 }
 /*# sourceMappingURL=iphone.css.map */
