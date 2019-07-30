@@ -37,8 +37,6 @@
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
 }
-
-
 .colorTable{
 	width: 100%;
 	background: #FFF;
@@ -49,7 +47,6 @@
 .colorTable-dark{
 	background: #F8F6F6;
 }
-
 body,
 .wrapper,
 .common{
@@ -153,7 +150,8 @@ body,
 		font-size: 14px;
 	}
 }
-.order1{
+.order1,
+.order2{
 	display: block;
 	position: relative;
 	width: 289px;
@@ -498,6 +496,9 @@ body,
 		}
 		.heigth55{
 			height: 55px;
+			p:first-child{
+				padding-top: 16	px;
+			}
 		}
 		.heigthAuto{
 			height: auto;
@@ -562,4 +563,71 @@ body,
 		width: 290px;
 		margin: 32px 17.5px 41px 17.5px;
 	}
+}
+.order2{
+	width: 290px;
+	height: 499px;
+	margin: 37px auto 25px auto;
+	border: none;
+	box-shadow: none;
+	h3{
+		margin: 0;
+		font-size: 21px;
+		line-height: 25px;
+		text-transform: uppercase;
+	}
+	label{
+		.input-margin-top{
+			width: 100%;
+			width: 277px;
+			margin: 35px 0 0 0;
+		}
+		.input-margin{
+			display: inline-block;
+			width: 277px;
+			margin: 25px 0 0 0 !important;
+		}
+	}
+	.order2_button{
+		width: 100%;
+		margin: 25px 0 0 0;
+	}
+	label:last-child{
+		display: inline-block;
+		position: relative;
+		margin: 37px 0 0 0;
+		color: #797979;	
+		font-family: @robotoC;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 14px;
+		letter-spacing: 0.05em;
+		float: right;
+	}
+	input[type='checkbox']{
+			display: inline-block;
+			position: relative;
+			width: 11px;
+			height: 11px;
+			float: left;
+			margin: 37px 0 0 0;
+		}
+	input[type='checkbox']::before{
+			content: '';
+			display: block;
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			margin: 0 0 0 0;
+			background: #fff;
+			border: solid 1px #E5E5E5;
+			border-radius: 2px;
+		}
+	input[type='checkbox']:checked::before{
+		width: 10px;
+		height: 10px;
+		background: url(../img/v.png) #fff;
+		background-size: cover;
+		}
 }

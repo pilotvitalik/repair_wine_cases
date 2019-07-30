@@ -182,7 +182,8 @@ body,
   font-weight: bold;
   font-size: 14px;
 }
-.order1 {
+.order1,
+.order2 {
   display: block;
   position: relative;
   width: 289px;
@@ -194,7 +195,8 @@ body,
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
 }
-.order1 h3 {
+.order1 h3,
+.order2 h3 {
   display: inline-block;
   margin: 27px 0 0 0;
   width: 100%;
@@ -207,7 +209,8 @@ body,
   letter-spacing: 0.05em;
   text-align: center;
 }
-.order1 p {
+.order1 p,
+.order2 p {
   margin: 0 0 26px 0;
   height: 20px;
   color: #000;
@@ -217,14 +220,17 @@ body,
   letter-spacing: 0.05em;
   text-align: center;
 }
-.order1 label:nth-child(4) input {
+.order1 label:nth-child(4) input,
+.order2 label:nth-child(4) input {
   margin: 20px 15px;
 }
-.order1 label:nth-child(5) textarea {
+.order1 label:nth-child(5) textarea,
+.order2 label:nth-child(5) textarea {
   height: 71px;
   padding: 12px 0 0 12px;
 }
-.order1 button {
+.order1 button,
+.order2 button {
   margin: 26px 15px 0 15px;
   color: #FFF;
   font-family: Roboto Condensed;
@@ -569,6 +575,9 @@ body,
 .answers > div .heigth55 {
   height: 55px;
 }
+.answers > div .heigth55 p:first-child {
+  padding-top: 16	px;
+}
 .answers > div .heigthAuto {
   height: auto;
 }
@@ -636,5 +645,71 @@ body,
 .answers button {
   width: 290px;
   margin: 32px 17.5px 41px 17.5px;
+}
+.order2 {
+  width: 290px;
+  height: 499px;
+  margin: 37px auto 25px auto;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.order2 h3 {
+  margin: 0;
+  font-size: 21px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+.order2 label .input-margin-top {
+  width: 100%;
+  width: 277px;
+  margin: 35px 0 0 0;
+}
+.order2 label .input-margin {
+  display: inline-block;
+  width: 277px;
+  margin: 25px 0 0 0 !important;
+}
+.order2 .order2_button {
+  width: 100%;
+  margin: 25px 0 0 0;
+}
+.order2 label:last-child {
+  display: inline-block;
+  position: relative;
+  margin: 37px 0 0 0;
+  color: #797979;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  float: right;
+}
+.order2 input[type='checkbox'] {
+  display: inline-block;
+  position: relative;
+  width: 11px;
+  height: 11px;
+  float: left;
+  margin: 37px 0 0 0;
+}
+.order2 input[type='checkbox']::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin: 0 0 0 0;
+  background: #fff;
+  border: solid 1px #E5E5E5;
+  border-radius: 2px;
+}
+.order2 input[type='checkbox']:checked::before {
+  width: 10px;
+  height: 10px;
+  background: url(../img/v.png) #ffffff;
+  background-size: cover;
 }
 /*# sourceMappingURL=iphone.css.map */
