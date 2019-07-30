@@ -1,8 +1,8 @@
 .input {
-  width: 246px;
+  width: 262px;
   height: 40px;
   padding-left: 13px;
-  margin: 0 15px;
+  margin: 26px 0 0 50px;
   background: #f8f6f6;
   border: solid 1px #e2dede;
   border-radius: 2px;
@@ -36,9 +36,9 @@
   letter-spacing: 0.05em;
 }
 .button {
-  width: 259px;
+  width: 275px;
   height: 40px;
-  margin: 0 auto;
+  margin: 26px 0 0 50px;
   background: #8C0014;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
@@ -84,9 +84,9 @@ body,
           flex-direction: column;
   position: relative;
   width: 100%;
-  height: 461px;
+  height: 530px;
   margin: 0;
-  background: url(../img/header_desktop_m.jpg) no-repeat;
+  background: url(../img/header_desktop.jpg) no-repeat;
   background-size: cover;
 }
 .header .menu {
@@ -99,84 +99,138 @@ body,
 }
 .header .menu h4 {
   display: inline-block;
-  margin: 9px 0 0 15px;
+  margin: 9px 0 0 0;
   color: #fff;
   font-family: Roboto Condensed;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
   height: auto;
+  float: left;
 }
 .header .menu p {
   display: inline-block;
-  margin: 2px 0 0 15px;
+  margin: 28px 0 0 -170px;
   color: #fff;
   font-family: Roboto Condensed;
-  font-weight: normal;
   font-size: 13px;
   height: auto;
+  float: left;
 }
 .header .menu div {
+  display: none;
+}
+.header .menu .navmenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: absolute;
-  width: 21px;
-  height: 18.73px;
-  top: 17.14px;
-  right: 15px;
+  position: relative;
+  width: 471px;
+  padding: 0;
+  margin: 20px 0 0 350px;
+  list-style-type: none;
 }
-.header .menu div span {
-  display: inline-block;
-  width: 100%;
-  height: 3px;
-  background: #fff;
+.header .menu .navmenu > a {
+  text-decoration: none;
 }
-.header .menu .navmenu {
-  display: none;
+.header .menu .navmenu > a li {
+  color: #FFF;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.header .menu .navmenu > a:hover {
+  cursor: pointer;
 }
 .header .menu .call {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  width: 260px;
+  padding: 0;
+  margin: -18.5px 0 0 966px;
+}
+.header .menu .call a p {
+  display: inline-block;
+  color: #FFF;
+  font-family: Roboto Condensed;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.header .menu .call a p:first-child {
+  width: 100px;
+}
+.header .menu .call a p:last-child {
+  width: 129px;
+  font-size: 16px;
+}
+.header .menu .call > a:last-child {
+  text-decoration: underline !important;
 }
 .header > h4 {
   display: inline-block;
   padding: 0;
-  margin: 70px 0 7px 0;
+  margin: 124px 0 17px 0;
   color: #fff;
   font-family: Roboto Condensed;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 18px;
+  line-height: 21px;
   letter-spacing: 0.05em;
   text-align: center;
 }
 .header h3 {
   display: inline-block;
-  margin: 0 auto;
-  color: #fff;
+  margin: 0 auto 17px auto;
+  color: #F8F6F6;
   font-family: Roboto Condensed;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 32px;
-  line-height: 37px;
+  font-size: 48px;
+  line-height: 56px;
   letter-spacing: 0.08em;
   text-align: center;
 }
-.header h5 {
+.header h3 br {
   display: none;
+}
+.header h5 {
+  display: inline-block;
+  margin: 0 auto 42px auto;
+  color: #FFF;
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
 }
 .header button {
   width: 165px;
   height: 41px;
-  margin: 26px auto 0 auto;
+  margin: 0 auto;
   border: solid 2px #fff;
   border-radius: 2px;
   -webkit-box-sizing: border-box;
@@ -188,14 +242,17 @@ body,
   font-weight: bold;
   font-size: 14px;
 }
+.header button:hover {
+  cursor: pointer;
+}
 .order1,
 .order2 {
   display: block;
   position: relative;
-  width: 289px;
-  height: 436px;
+  width: 376px;
+  height: 447px;
   padding: 0;
-  margin: -102px auto 0 auto;
+  margin: -68px 0 0 851px;
   background: #fff;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -204,9 +261,9 @@ body,
 .order1 h3,
 .order2 h3 {
   display: inline-block;
-  margin: 27px 0 0 0;
+  margin: 42px 0 0 0;
   width: 100%;
-  height: 50px;
+  height: 24px;
   color: #000;
   font-family: Roboto Condensed;
   font-weight: bold;
@@ -215,20 +272,24 @@ body,
   letter-spacing: 0.05em;
   text-align: center;
 }
+.order1 h3 br,
+.order2 h3 br {
+  display: none;
+}
 .order1 p,
 .order2 p {
   margin: 0 0 26px 0;
-  height: 20px;
+  height: 24px;
   color: #000;
   font-family: Roboto Condensed;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 19px;
   letter-spacing: 0.05em;
   text-align: center;
 }
-.order1 label:nth-child(4) input,
-.order2 label:nth-child(4) input {
-  margin: 20px 15px;
+.order1 label:nth-child(3) input,
+.order2 label:nth-child(3) input {
+  margin: 0px 0 0 50px;
 }
 .order1 label:nth-child(5) textarea,
 .order2 label:nth-child(5) textarea {
@@ -237,7 +298,6 @@ body,
 }
 .order1 button,
 .order2 button {
-  margin: 26px 15px 0 15px;
   color: #FFF;
   font-family: Roboto Condensed;
   font-weight: bold;
@@ -257,14 +317,15 @@ body,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 290px;
-  height: 572px;
+  position: relative;
+  width: 749px;
+  height: 329px;
   padding: 0;
-  margin: 38px auto 0 auto;
+  margin: -336px 0 0 50px;
 }
 .whyWe h3 {
   display: inline-block;
-  margin: 0 0 27px 0;
+  margin: 0 0 0 0;
   width: 100%;
   color: #000;
   font-family: Roboto Condensed;
@@ -273,25 +334,28 @@ body,
   line-height: 25px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
 }
 .whyWe .whyWeDescription {
   display: block;
   position: relative;
   width: inherit;
-  height: auto;
+  height: 79px;
   padding: 0;
+  margin: 0;
 }
 .whyWe .whyWeDescription img {
   float: left;
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
+  margin: 3px 0 0 0;
 }
 .whyWe .whyWeDescription h4 {
   float: right;
   display: inline-block;
-  width: 231px;
-  margin: 0;
+  width: 675px;
+  padding-left: 22px;
+  margin: 3px 0 0 0;
   color: #000;
   font-family: Roboto Condensed;
   font-weight: bold;
@@ -299,20 +363,24 @@ body,
   line-height: 23px;
   letter-spacing: 0.05em;
 }
+.whyWe .whyWeDescription h4 br {
+  display: none;
+}
 .whyWe .whyWeDescription p {
   float: right;
   display: inline-block;
   position: relative;
-  margin: 13px 0 0 0;
-  width: 231px;
+  width: 675px;
+  padding-left: 22px;
+  margin: 3px 0 0 0;
   color: #000;
   font-family: Roboto Condensed;
   font-size: 16px;
   line-height: 21px;
   letter-spacing: 0.05em;
 }
-.whyWe .whyWeDescription:nth-child(3) {
-  margin: 16px 0 18px 0;
+.whyWe > .whyWeDescription:nth-child(2) {
+  margin: 0 0;
 }
 .price {
   display: -webkit-box;
@@ -329,20 +397,23 @@ body,
 }
 .price h4 {
   display: inline-block;
-  width: 290px;
+  width: 100%;
   margin: 38px auto 0 auto;
   color: #000;
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
-  font-size: 21px;
-  line-height: 25px;
+  font-size: 22px;
+  line-height: 26px;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
+.price h4 br {
+  display: none;
+}
 .price > div {
-  width: 290px;
+  width: 970px;
   padding: 0;
   margin: 30px auto 0 auto;
   -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
@@ -359,9 +430,9 @@ body,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 197px;
+  width: 650px;
   height: inherit;
-  padding: 0 0 0 15px;
+  padding: 0 0 0 33px;
   margin: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -380,9 +451,9 @@ body,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 64px;
+  width: 250px;
   height: inherit;
-  padding-left: 8px;
+  padding-left: 33px;
   margin: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -413,11 +484,10 @@ body,
   border: none;
 }
 .price > div div:first-child p:first-child {
-  width: 114px;
+  width: 650px;
 }
 .price > div div:first-child p:last-child {
-  width: 81px;
-  margin-right: 16px;
+  width: 250px;
 }
 .price button {
   margin: 32px auto 0 auto;
@@ -430,20 +500,20 @@ body,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 325px;
-  height: 600px;
-  background: url(../img/Opinion_m.jpg) no-repeat;
+  width: 100%;
+  height: 387px;
+  background: url(../img/Opinion.jpg) no-repeat;
   background-size: cover;
   position: relative;
 }
 .opinion h4 {
   display: inline-block;
-  margin: 37px 0 32px 0;
+  margin: 45px 0 30.36px 0;
   color: #FFF;
   font-family: Roboto Condensed;
   font-weight: bold;
-  font-size: 21px;
-  line-height: 25px;
+  font-size: 22px;
+  line-height: 26px;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -451,8 +521,8 @@ body,
 .opinion .opinionSlider {
   display: block;
   position: relative;
-  width: 325px;
-  height: 470px;
+  width: 100%;
+  height: 204px;
 }
 .opinion .opinionSlider #p1,
 .opinion .opinionSlider #p2,
@@ -463,18 +533,21 @@ body,
 .opinion .opinionSlider #p3 {
   display: inline-block;
   position: absolute;
+  width: 904px;
+  height: 204px;
+  margin: 0 0 0 160px;
   padding: 0;
 }
 .opinion .opinionSlider #p3 p {
   display: inline-block;
-  width: 258px;
-  height: 416px;
+  width: 904px;
+  height: 143px;
   padding: 0;
-  margin: 0 33px;
+  margin: 0;
   color: #FFF;
   font-family: Roboto Condensed;
-  font-size: 16px;
-  line-height: 22.7px;
+  font-size: 18px;
+  line-height: 25px;
   text-align: center;
   letter-spacing: 0.05em;
 }
@@ -485,7 +558,7 @@ body,
   width: 15px;
   height: 13px;
   background: url(../img/up_quote.png);
-  left: 18px;
+  left: -20px;
   top: -11px;
 }
 .opinion .opinionSlider #p3 p:first-child::after {
@@ -495,23 +568,56 @@ body,
   width: 15px;
   height: 13px;
   background: url(../img/down_quote.png);
-  left: 293px;
-  top: 415px;
+  left: 910px;
+  top: 142px;
 }
 .opinion .opinionSlider #p3 p:last-child {
   height: 19px;
-  margin: 25px 33px 0 33px;
+  padding: 0;
+  margin: 23px 0 0 0;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 19px;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: right;
 }
 .opinion .page {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  position: relative;
+  width: 151px;
+  height: 43px;
+  margin: 0 auto;
+}
+.opinion .page .smallText,
+.opinion .page .bigText {
+  color: #FFF;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+}
+.opinion .page .bigText {
+  font-size: 36px;
+  line-height: 42px;
 }
 .brand {
-  width: 291;
-  height: 495px;
-  margin: 38px 17px 41px 17px;
+  width: 794px;
+  height: 206px;
+  padding: 0;
+  margin: 44px auto 51px auto;
 }
 .brand h4 {
   display: inline-block;
@@ -520,11 +626,14 @@ body,
   color: #000;
   font-family: Roboto Condensed;
   font-weight: bold;
-  font-size: 21px;
-  line-height: 25px;
-  text-align: center;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: left;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+.brand h4 br {
+  display: none;
 }
 .brand div {
   display: -webkit-box;
@@ -537,15 +646,22 @@ body,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0;
+  margin: 0;
+  border: solid 1px #E5E5E5;
 }
 .brand div img {
   width: 97px;
   margin: 0;
-  border: none;
+}
+.brand div .border-right {
+  border-right: solid 1px #E5E5E5;
+}
+.brand div .border-down {
+  border-bottom: solid 1px #E5E5E5;
 }
 .answers {
   width: 100%;
-  height: 1000px;
+  height: 828px;
   background: #F8F6F6;
 }
 .answers h4 {
@@ -555,8 +671,8 @@ body,
   color: #000;
   font-family: Roboto;
   font-weight: bold;
-  font-size: 21px;
-  line-height: 25px;
+  font-size: 22px;
+  line-height: 26px;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -570,8 +686,8 @@ body,
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  width: 290px;
-  height: 764px;
+  width: 970px;
+  height: 609px;
   margin: 0 auto;
   background: #FFF;
   -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
@@ -579,13 +695,10 @@ body,
   border-radius: 4px;
 }
 .answers > div .heigth74 {
-  height: 74px;
+  height: 79px;
 }
 .answers > div .heigth55 {
-  height: 55px;
-}
-.answers > div .heigth55 p:first-child {
-  padding-top: 16px;
+  height: 79px;
 }
 .answers > div .heigthAuto {
   height: auto;
@@ -602,6 +715,7 @@ body,
       flex-wrap: wrap;
   position: relative;
   width: 100%;
+  margin: 0;
   border-bottom: solid 1px  #E5E5E5;
 }
 .answers > div div p {
@@ -610,28 +724,32 @@ body,
   position: relative;
 }
 .answers > div div p:first-child {
-  width: 29px;
-  height: 26px;
-  padding-left: 10px;
-  padding-top: 19px;
+  width: 53px;
+  height: 50px;
+  padding-left: 31px;
+  padding-top: 15px;
   color: #DEDDDD;
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 42px;
+  line-height: 49px;
   text-transform: uppercase;
 }
 .answers > div div p:nth-child(2) {
-  width: 243px;
-  padding-left: 8px;
-  padding-top: 18px;
+  width: 783px;
+  height: 42px;
+  padding-left: 32px;
+  padding-top: 27px;
   color: #000;
   font-family: Roboto Condensed;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 20px;
+  line-height: 23px;
   letter-spacing: 0.05em;
+}
+.answers > div div p:nth-child(2) br {
+  display: none;
 }
 .answers > div div .playNone {
   display: none;
@@ -639,35 +757,37 @@ body,
 .answers > div div .colorActive {
   color: #8C0014 !important;
 }
+.answers > div div .colorActive br {
+  display: none;
+}
 .answers > div div .pActive {
-  width: 230px;
+  width: 783px;
   height: auto;
-  margin: 12px 0 12px 47px;
+  margin: 12px 0 12px 118px;
   color: #000;
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 23px;
   letter-spacing: 0.05em;
-}
-.answers > div div .pActive br {
-  display: none;
 }
 .answers button {
   width: 290px;
-  margin: 32px 17.5px 41px 17.5px;
+  margin: 35px 0 0 475px;
 }
 .order2 {
-  width: 290px;
-  height: 499px;
-  margin: 37px auto 25px auto;
+  width: 1110px;
+  height: 197px;
+  position: relative;
+  padding: 0;
+  margin: 37px auto;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 .order2 h3 {
-  margin: 0;
+  margin: 0 auto 29px auto;
   font-size: 21px;
   line-height: 25px;
   text-transform: uppercase;
@@ -675,21 +795,44 @@ body,
 .order2 label .input-margin-top {
   width: 100%;
   width: 277px;
-  margin: 35px 0 0 0;
 }
 .order2 label .input-margin {
   display: inline-block;
-  width: 277px;
-  margin: 25px 0 0 0 !important;
+  width: 356px;
 }
-.order2 .order2_button {
-  width: 100%;
-  margin: 25px 0 0 0;
+.order2 label:nth-child(2) input {
+  position: absolute;
+  left: -50px;
+  top: 27px;
+}
+.order2 label:nth-child(3) input {
+  position: absolute;
+  left: 280px;
+  top: 53px;
+}
+.order2 label:nth-child(4) input {
+  position: absolute;
+  right: 0px;
+  top: 27px;
+}
+.order2 label:nth-child(5) textarea {
+  width: 686px;
+  position: relative;
+  height: 30px;
+  right: 50px;
+  top: 41px;
+}
+.order2 button {
+  width: 372px;
+  position: relative;
+  height: 43px;
+  right: -670px;
+  top: -33px;
 }
 .order2 label:last-child {
   display: inline-block;
   position: relative;
-  margin: 37px 0 0 0;
+  margin: 0 0 0 0;
   color: #797979;
   font-family: Roboto Condensed;
   font-style: normal;
@@ -698,6 +841,8 @@ body,
   line-height: 14px;
   letter-spacing: 0.05em;
   float: right;
+  top: 55.5px;
+  left: -488px;
 }
 .order2 input[type='checkbox'] {
   display: inline-block;
@@ -705,7 +850,8 @@ body,
   width: 11px;
   height: 11px;
   float: left;
-  margin: 37px 0 0 0;
+  bottom: -53px;
+  left: 330px;
 }
 .order2 input[type='checkbox']::before {
   content: '';
@@ -721,8 +867,9 @@ body,
 .order2 input[type='checkbox']:checked::before {
   width: 10px;
   height: 10px;
-  background: url(../img/v.png) #ffffff;
-  background-size: cover;
+  background: url(../img/v.png) #ffffff no-repeat;
+  background-size: content;
+  background-position: 2px 0;
 }
 .footer {
   display: -webkit-box;
@@ -733,59 +880,101 @@ body,
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  width: 325px;
-  height: 773px;
+  width: 100%;
+  height: auto;
+  margin: 0;
 }
 .footer .contact {
   display: block;
   position: relative;
   width: 100%;
-  height: 661px;
-  padding-bottom: 27px;
+  height: 477px;
 }
 .footer .contact .map {
   width: 100%;
-  height: 292px;
+  height: 351px;
 }
 .footer .contact > div:nth-child(2) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 396px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: auto;
+  position: relative;
+  margin-left: 15px;
+}
+.footer .contact > div:nth-child(2) div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
-  margin-left: 15px;
+}
+.footer .contact > div:nth-child(2) #phone {
+  width: 160px;
+  height: 62px;
+  margin: 0 0 0 -10px;
+}
+.footer .contact > div:nth-child(2) #adress {
+  width: 325px;
+  height: 90px;
+  margin: 0;
+}
+.footer .contact > div:nth-child(2) #email {
+  width: 173px;
+  height: 62px;
+  margin: 0;
+}
+.footer .contact > div:nth-child(2) #time {
+  width: 250px;
+  height: 90px;
+  margin: 0 10px 0 0;
 }
 .footer .contact .contact-title,
 .footer .contact .contact-discript {
+  display: inline-block;
+  width: 100%;
+  height: 90px;
   color: #8C0014;
   font-family: Roboto Condensed;
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.05em;
-  margin: 23px 0 0 0;
+  margin: 0;
 }
 .footer .contact .contact-title-top {
-  margin-top: 28px;
+  margin: 0;
 }
 .footer .contact .contact-discript {
   color: #000;
-  margin-top: 14px;
+  text-align: left;
+  margin: 0;
+}
+.footer .contact .contact-discript br:first-child {
+  display: none;
 }
 .footer .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 325px;
-  height: 58px;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 37px;
   margin: 27px 0 0 0;
   display: block;
   position: relative;
@@ -806,6 +995,6 @@ body,
   margin: 12px 13px 5px 13px;
 }
 .footer .copyright p:last-child {
-  margin: 0 82px 0 82px;
+  margin: 0 0 0 727px;
 }
-/*# sourceMappingURL=iphone.css.map */
+/*# sourceMappingURL=style995.css.map */
