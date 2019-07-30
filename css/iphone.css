@@ -56,6 +56,9 @@
 .colorTable-dark {
   background: #F8F6F6;
 }
+.border-down {
+  border-bottom: solid 2px #E5E5E5;
+}
 body,
 .wrapper,
 .common {
@@ -490,5 +493,40 @@ body,
   font-weight: bold;
   font-size: 18px;
   line-height: 19px;
+}
+.brand {
+  width: 291;
+  height: 495px;
+  margin: 38px 17px 41px 17px;
+}
+.brand h4 {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 35px 0;
+  color: #000;
+  font-family: Roboto Condensed;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.brand div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+}
+.brand div img {
+  width: 97px;
+  margin: 0;
+  border: none;
 }
 /*# sourceMappingURL=iphone.css.map */
