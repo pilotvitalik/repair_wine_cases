@@ -109,6 +109,9 @@ body,
 		.navmenu{
 			display: none;
 		}
+		.call{
+			display: none;
+		}
 	}
 	&>h4{
 		display: inline-block;
@@ -497,7 +500,7 @@ body,
 		.heigth55{
 			height: 55px;
 			p:first-child{
-				padding-top: 16	px;
+				padding-top: 16px;
 			}
 		}
 		.heigthAuto{
@@ -630,4 +633,73 @@ body,
 		background: url(../img/v.png) #fff;
 		background-size: cover;
 		}
+}
+.footer{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 325px;
+	height: 773px;
+	.contact{
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 661px;
+		padding-bottom: 27px; 
+		.map{
+			width: 100%;
+			height: 292px;
+		}
+		&>div:nth-child(2){
+			display: flex;
+			height: 396px;
+			flex-direction: column;
+			position: relative;
+			margin-left: 15px;
+		}
+		.contact-title,
+		.contact-discript{
+			color: #8C0014;
+			font-family: @robotoC;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 23px;
+			letter-spacing: 0.05em;
+			margin: 23px 0 0 0;
+		}
+		.contact-title-top{
+			margin-top: 28px;
+		}
+		.contact-discript{
+			color: #000;
+			margin-top: 14px;
+		}
+	}
+	.copyright{
+		display: flex;
+		flex-direction: column;
+		width: 325px;
+		height: 58px;
+		margin: 27px 0 0 0;
+		display: block;
+		position: relative;
+		background: #202020;
+		p{
+			display: inline-block;
+			margin:0;
+			color: #797979;
+			font-family: @robotoC;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 13px;
+			line-height: 15px;
+			letter-spacing: 0.05em;
+		}
+		p:first-child{
+			margin:12px 13px 5px 13px;
+		}
+		p:last-child{
+			margin: 0 82px 0 82px;
+		}
+	}
 }

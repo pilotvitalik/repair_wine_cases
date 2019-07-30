@@ -576,7 +576,7 @@ body,
   height: 55px;
 }
 .answers > div .heigth55 p:first-child {
-  padding-top: 16	px;
+  padding-top: 16px;
 }
 .answers > div .heigthAuto {
   height: auto;
@@ -711,5 +711,89 @@ body,
   height: 10px;
   background: url(../img/v.png) #ffffff;
   background-size: cover;
+}
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 325px;
+  height: 773px;
+}
+.footer .contact {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 661px;
+  padding-bottom: 27px;
+}
+.footer .contact .map {
+  width: 100%;
+  height: 292px;
+}
+.footer .contact > div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 396px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin-left: 15px;
+}
+.footer .contact .contact-title,
+.footer .contact .contact-discript {
+  color: #8C0014;
+  font-family: Roboto Condensed;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  margin: 23px 0 0 0;
+}
+.footer .contact .contact-title-top {
+  margin-top: 28px;
+}
+.footer .contact .contact-discript {
+  color: #000;
+  margin-top: 14px;
+}
+.footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 325px;
+  height: 58px;
+  margin: 27px 0 0 0;
+  display: block;
+  position: relative;
+  background: #202020;
+}
+.footer .copyright p {
+  display: inline-block;
+  margin: 0;
+  color: #797979;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+}
+.footer .copyright p:first-child {
+  margin: 12px 13px 5px 13px;
+}
+.footer .copyright p:last-child {
+  margin: 0 82px 0 82px;
 }
 /*# sourceMappingURL=iphone.css.map */
