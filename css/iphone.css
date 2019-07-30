@@ -366,6 +366,12 @@ body,
       -ms-flex-align: center;
           align-items: center;
   float: right;
+  color: #000;
+  font-family: Roboto Condensed;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
 }
 .price > div div:first-child {
   background: #8C0014;
@@ -401,5 +407,88 @@ body,
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+.opinion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 325px;
+  height: 600px;
+  background: url(../img/Opinion_m.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.opinion h4 {
+  display: inline-block;
+  margin: 37px 0 32px 0;
+  color: #FFF;
+  font-family: Roboto Condensed;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.opinion .opinionSlider {
+  display: block;
+  position: relative;
+  width: 325px;
+  height: 470px;
+}
+.opinion .opinionSlider #p1,
+.opinion .opinionSlider #p2,
+.opinion .opinionSlider #p4,
+.opinion .opinionSlider #p5 {
+  display: none;
+}
+.opinion .opinionSlider #p3 {
+  display: inline-block;
+  position: absolute;
+  padding: 0;
+}
+.opinion .opinionSlider #p3 p {
+  display: inline-block;
+  width: 258px;
+  height: 416px;
+  padding: 0;
+  margin: 0 33px;
+  color: #FFF;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  line-height: 22.7px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+.opinion .opinionSlider #p3 p:first-child::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  background: url(../img/up_quote.png);
+  left: 18px;
+  top: -11px;
+}
+.opinion .opinionSlider #p3 p:first-child::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  background: url(../img/down_quote.png);
+  left: 293px;
+  top: 415px;
+}
+.opinion .opinionSlider #p3 p:last-child {
+  height: 19px;
+  margin: 25px 33px 0 33px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 19px;
 }
 /*# sourceMappingURL=iphone.css.map */
