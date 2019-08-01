@@ -429,6 +429,16 @@ body,
   margin: 32px auto 0 auto;
   width: 290px;
 }
+.common > div:nth-child(4)::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  background: url(../img/up_quote.png);
+  top: 70px;
+  left: 15px;
+}
 .opinion {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,14 +448,14 @@ body,
       -ms-flex-direction: column;
           flex-direction: column;
   width: 325px;
-  height: 600px;
+  height: 650px;
   background: url(../img/Opinion_m.jpg) no-repeat;
   background-size: contain;
   position: relative;
 }
 .opinion h4 {
   display: inline-block;
-  margin: 37px 0 32px 0;
+  margin: 20px 0 20px 0;
   color: #FFF;
   font-family: Roboto Condensed;
   font-weight: bold;
@@ -459,21 +469,36 @@ body,
   display: block;
   position: relative;
   width: 325px;
-  height: 470px;
+  height: 530px;
 }
-.opinion .opinionSlider #p1,
-.opinion .opinionSlider #p2,
-.opinion .opinionSlider #p4,
-.opinion .opinionSlider #p5 {
-  display: none;
+.opinion .opinionSlider .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  width: 325px;
+  height: 530px;
 }
-.opinion .opinionSlider #p3 {
-  display: inline-block;
-  position: absolute;
+.opinion .opinionSlider .slider div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 325px;
   padding: 0;
+  float: left;
 }
-.opinion .opinionSlider #p3 p {
+.opinion .opinionSlider .slider div p {
   display: inline-block;
+  position: relative;
   width: 258px;
   height: 416px;
   padding: 0;
@@ -485,32 +510,42 @@ body,
   text-align: center;
   letter-spacing: 0.05em;
 }
-.opinion .opinionSlider #p3 p:first-child::before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 15px;
-  height: 13px;
-  background: url(../img/up_quote.png);
-  left: 18px;
-  top: -11px;
-}
-.opinion .opinionSlider #p3 p:first-child::after {
+.opinion .opinionSlider .slider div p:first-child::after {
   content: '';
   display: block;
   position: absolute;
   width: 15px;
   height: 13px;
   background: url(../img/down_quote.png);
-  left: 293px;
+  left: 265px;
   top: 415px;
 }
-.opinion .opinionSlider #p3 p:last-child {
+.opinion .opinionSlider .slider div p:last-child {
   height: 19px;
-  margin: 25px 33px 0 33px;
+  margin: 85px 33px 0 33px;
   font-weight: bold;
   font-size: 18px;
   line-height: 19px;
+}
+.opinion .opinionSlider .slider div:first-child p:first-child::after {
+  left: 250px;
+  top: 480px;
+}
+.opinion .opinionSlider .slider div:nth-child(2) p:first-child::after {
+  left: 250px;
+  top: 480px;
+}
+.opinion .opinionSlider .slider div:nth-child(3) p:first-child::after {
+  left: 260px;
+  top: 415px;
+}
+.opinion .opinionSlider .slider div:nth-child(4) p:first-child::after {
+  left: 259px;
+  top: 415px;
+}
+.opinion .opinionSlider .slider div:last-child p:first-child::after {
+  left: 258px;
+  top: 415px;
 }
 .opinion .page {
   display: none;
