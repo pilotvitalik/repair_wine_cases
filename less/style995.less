@@ -1,12 +1,15 @@
 @roboto: Roboto;
 @robotoC: Roboto Condensed;
+@px14: 1vw;
+@fonSiz: 14*1vw;
+@curWid: 100/1200%;
 @bdef: solid 1px red;
 
 .input{
-	width: 262px;
+	width: 230*100/376%;
 	height: 40px;
-	padding-left: 13px;
-	margin: 26px 0 0 50px;
+	padding-left: 10*100/230%;
+	margin: 26px 0 0 18%;
 	background: #f8f6f6;
 	border: solid 1px #e2dede;
 	border-radius: 2px;
@@ -14,25 +17,28 @@
 .input::placeholder{
 	color: #000;
 	font-family: @robotoC;
-	font-size: 14px;
-	line-height: 16px;
+	font-size: @px14;
+	line-height: 16/@fonSiz;
 	letter-spacing: 0.05em;
 }
 .button{
-	width: 275px;
+	width: 243*100/376%;
 	height: 40px;
-	margin: 26px 0 0 50px;
+	margin: 26px 0 0 18%;
 	background: #8C0014;
 	box-shadow: 0 0 2px rgba(0,0,0,0.25);
 	border-radius: 2px;
 	border: none;
 }
+.button:hover{
+	cursor: pointer;
+}
 .buttonText{
 	color: #FFF;
 	font-family: @robotoC;
 	font-weight: bold;
-	font-size: 13px;
-	line-height: 15px;
+	font-size: 14/13*@px14;
+	line-height: 15/@fonSiz;
 	text-align: center;
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
@@ -50,10 +56,12 @@
 body,
 .wrapper,
 .common{
+	width: 100%;
 	padding: 0;
 	margin: 0;
 	width: 100%;
 	height: auto;
+	/* border:@bdef; */
 }
 .header{
 	display: flex;
@@ -63,35 +71,44 @@ body,
 	height: 530px;
 	margin: 0;
 	background: url(../img/header_desktop.jpg) no-repeat;
-	background-size: cover;
+	background-size: cover;	
 	.menu{
-		display: block;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 		position: relative;
 		width: 100%;
 		height: 56px;
 		padding: 0;
+		margin: 0;
 		background: rgba(0,0,0,0.45);
-		h4{
+		div:first-child{
+			display: flex;
+			flex-direction: column;
+			width: 18.416666667%;
+			margin: 0 0 0 0.5%;
+			h4{
 			display: inline-block;
 			margin: 9px 0 0 0;
 			color: #fff;
 			font-family: @robotoC;
 			text-transform: uppercase;
 			font-weight: bold;
-			font-size: 14px;
-			height: auto;
+			font-size: @px14;
+			height: @px14;
 			float: left;
+			}
+			p{
+				display: inline-block;
+				margin: 7px 0 0 0;
+				color: #fff;
+				font-family: @robotoC;
+				font-size: @px14/1.076923077;
+				height: auto;
+				float: left;
+			}
 		}
-		p{
-			display: inline-block;
-			margin: 28px 0 0 -170px;
-			color: #fff;
-			font-family: @robotoC;
-			font-size: 13px;
-			height: auto;
-			float: left;
-		}
-		div{
+		div:nth-child(2){
 			display: none;		
 		}
 		.navmenu{
@@ -99,9 +116,10 @@ body,
 			flex-direction: row;
 			justify-content: space-between;
 			position: relative;
-			width: 471px;
-			padding: 0;
-			margin: 20px 0 0 350px;
+			width: 471*@curWid;
+			height: @px14;
+			padding: 20px 0 0 0;
+			margin:0 auto 0 129*100/1200%;
 			list-style-type: none;
 			&>a{
 				text-decoration: none;
@@ -110,8 +128,8 @@ body,
 					font-family: @robotoC;
 					font-style: normal;
 					font-weight: bold;
-					font-size: 14px;
-					line-height: 16px;
+					font-size: @px14;
+					line-height: @px14*1.142857143;
 					text-transform: uppercase;
 				}
 			}
@@ -124,26 +142,29 @@ body,
 			flex-direction: row;
 			justify-content: space-between;
 			position: relative;
-			width: 260px;
+			width: 256*@curWid;
+			height: @px14*1.071428571;
 			padding: 0;
-			margin: -18.5px 0 0 966px;
+			margin: 0 0.5% 0 0;
 			a{
 				p{
 					display: inline-block;
 					color: #FFF;
 					font-family: @robotoC;
 					font-weight: bold;
-					font-size: 15px;
-					line-height: 18px;
+					font-size: @px14*1.071428571;
+					line-height: 18/@fonSiz;
 					text-transform: uppercase;	
-					margin: 0;			
+					margin: 19px 0 0 0;		
 				}
 				p:first-child{
-					width: 100px;
+					width: 100%;
+					margin: 19px 3% 0 0;
 				}
 				p:last-child{
-					width: 129px;
-					font-size: 16px;
+					width: 100%;
+					margin: 19px 0 0 auto;
+					font-size: @px14*1.142857143;
 				}
 			}
 			&>a:last-child{
@@ -159,8 +180,8 @@ body,
 		font-family: @robotoC;
 		text-transform: uppercase;
 		font-weight: bold;
-		font-size: 18px;
-		line-height: 21px;
+		font-size: 18/@fonSiz;
+		line-height: 21/@fonSiz;
 		letter-spacing: 0.05em;
 		text-align: center;
 	}
@@ -171,8 +192,8 @@ body,
 		font-family: @robotoC;
 		text-transform: uppercase;
 		font-weight: bold;
-		font-size: 48px;
-		line-height: 56px;
+		font-size: 48/@fonSiz;
+		line-height: 56/@fonSiz;
 		letter-spacing: 0.08em;
 		text-align: center;
 		br{
@@ -185,13 +206,13 @@ body,
 		color: #FFF;
 		font-family: @roboto;
 		font-weight: normal;
-		font-size: 16px;
-		line-height: 19px;
+		font-size: 16/@fonSiz;
+		line-height: 19/@fonSiz;
 		text-align: center;
 		letter-spacing: 0.05em;
 	}
 	button{
-		width: 165px;
+		width: 165*100/1200%;
 		height: 41px;
 		margin: 0 auto;
 		border: solid 2px #fff;
@@ -202,7 +223,7 @@ body,
 		font-family: @robotoC;
 		text-transform: uppercase;
 		font-weight: bold;
-		font-size: 14px;
+		font-size: @px14;
 	}
 	button:hover{
 		cursor: pointer;
@@ -212,10 +233,10 @@ body,
 .order2{
 	display: block;
 	position: relative;
-	width: 376px;
-	height: 447px;
+	width: 376*@curWid;
+	height: 484px;
 	padding: 0;
-	margin: -68px 0 0 851px;
+	margin: -59px 0.5% 0 auto;
 	background: #fff; 
 	box-shadow: 0 0 20px rgba(0,0,0,0.3);
 	border-radius: 4px;
@@ -227,8 +248,8 @@ body,
 		color: #000;
 		font-family: @robotoC;
 		font-weight: bold;
-		font-size: 20px;
-		line-height: 23px;
+		font-size: 20/@fonSiz;
+		line-height: 23/@fonSiz;
 		letter-spacing: 0.05em;
 		text-align: center;
 		br{
@@ -240,15 +261,10 @@ body,
 		height: 24px;
 		color: #000;
 		font-family: @robotoC;
-		font-size: 16px;
-		line-height: 19px;
+		font-size: 16/@fonSiz;
+		line-height: 19/@fonSiz;
 		letter-spacing: 0.05em;
 		text-align: center;
-	}
-	label:nth-child(3){
-		input{
-			margin: 0px 0 0 50px;
-		}
 	}
 	label:nth-child(5){
 		textarea{
@@ -260,8 +276,8 @@ body,
 		color: #FFF;
 		font-family: @robotoC;
 		font-weight: bold;
-		font-size: 13px;
-		line-height: 15px;
+		font-size: 14/13*@px14;
+		line-height: 15/@fonSiz;
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
 	}
@@ -271,10 +287,10 @@ body,
 	flex-direction: column;	
 	justify-content: space-between;
 	position: relative;
-	width: 749px;
+	width: 760*@curWid;
 	height: 329px;
 	padding: 0;
-	margin: -336px 0 0 50px;
+	margin: -382px 400*@curWid 97px auto;
 	h3{
 		display: inline-block;
 		margin: 0 0 0 0;
@@ -282,8 +298,8 @@ body,
 		color: #000;
 		font-family:@robotoC;
 		font-weight: bold;
-		font-size: 21px;
-		line-height: 25px;
+		font-size: 21/@fonSiz;
+		line-height: 25/@fonSiz;
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
 		text-align: left;
@@ -291,27 +307,27 @@ body,
 	.whyWeDescription{
 		display: block;
 		position: relative;
-		width: inherit;
+		width: 100%;
 		height: 79px;
 		padding: 0;
 		margin: 0;
 		img{
 			float: left;
-			width: 48px;
+			width: 48*100/760%;
 			height: 48px;
 			margin: 3px 0 0 0;
 			}
 		h4{
 			float: right;
 			display: inline-block;
-			width: 675px;
+			width: 630*100/760%;
 			padding-left: 22px;
-			margin: 3px 0 0 0;
+			margin: 3px 34*100/760% 0 auto;
 			color: #000;
 			font-family: @robotoC;
 			font-weight: bold;
-			font-size: 20px;
-			line-height: 23px;
+			font-size: 20/@fonSiz;
+			line-height: 23/@fonSiz;
 			letter-spacing: 0.05em;
 			br{
 				display: none;
@@ -321,13 +337,13 @@ body,
 			float: right;
 			display: inline-block;
 			position: relative;
-			width: 675px;
+			width: 664*100/760%;
 			padding-left: 22px;
 			margin: 3px 0 0 0;
 			color: #000;
 			font-family: @robotoC;
-			font-size: 16px;
-			line-height: 21px;
+			font-size: 16/@fonSiz;
+			line-height: 21/@fonSiz;
 			letter-spacing: 0.05em;
 		}
 	}
@@ -350,8 +366,8 @@ body,
 		font-family: @robotoC;
 		font-style: normal;
 		font-weight: bold;
-		font-size: 22px;
-		line-height: 26px;
+		font-size: 22/@fonSiz;
+		line-height: 26/@fonSiz;
 		text-align: center;
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
@@ -360,7 +376,7 @@ body,
 		}
 	}
 	&>div{
-		width: 970px;
+		width: 970*@curWid;
 		padding: 0;
 		margin: 30px auto 0 auto;
 		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
@@ -372,9 +388,9 @@ body,
 			vertical-align: middle;
 			p:first-child{
 				display: flex;
-				width: 650px;
+				width: 650*100/970%;
 				height: inherit;
-				padding: 0 0 0 33px;
+				padding: 0 0 0 33*100/970%;
 				margin: 0;
 				align-items: center;
 				float: left;
@@ -383,23 +399,23 @@ body,
 				font-family: @robotoC;
 				font-style: normal;
 				font-weight: normal;
-				font-size: 14px;
-				line-height: 18px;
+				font-size: @px14;
+				line-height: 18/@fonSiz;
 				letter-spacing: 0.05em;
 			}
 			p:last-child{
 				display: flex;
-				width: 250px;
+				width: 250*100/970%;
 				height: inherit;
-				padding-left: 33px;
+				padding-left: 33*100/970%;
 				margin: 0;
 				align-items: center;
 				float: right;
 				color: #000;
 				font-family: @robotoC;
 				font-weight: bold;
-				font-size: 14px;
-				line-height: 18px;
+				font-size: @px14;
+				line-height: 18/@fonSiz;
 				letter-spacing: 0.05em;
 			}
 		}
@@ -413,20 +429,21 @@ body,
 				font-family: @robotoC;
 				font-style: normal;
 				font-weight: bold;
-				font-size: 16px;
-				line-height: 19px;
+				font-size: 16/@fonSiz;
+				line-height: 19/@fonSiz;
 				letter-spacing: 0.05em;
 				border: none;
 			}
 			p:first-child{
-				width:  650px;
+				width:  650*100/970%;
 			}
 			p:last-child{
-				width: 250px;
+				width: 250*100/970%;
 			}
 		}
 	}
 	button{
+		width: 275*@curWid;
 		margin: 32px auto 0 auto;
 	}
 }
@@ -444,8 +461,8 @@ body,
 		color: #FFF;
 		font-family: @robotoC;
 		font-weight: bold;
-		font-size: 22px;
-		line-height: 26px;
+		font-size: 22/@fonSiz;
+		line-height: 26/@fonSiz;
 		text-align: center;
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
@@ -461,20 +478,20 @@ body,
 		#p3{
 			display: inline-block;
 			position: absolute;
-			width: 904px;
-			height: 204px;
-			margin: 0 0 0 160px;
+			width: 800*@curWid;
+			height: 196px;
+			margin: 0 0 0 16.5%;
 			padding: 0;
 			p{
 				display: inline-block;
-				width: 904px;
-				height: 143px;
+				width: 100%;
+				height: 135px;
 				padding: 0;
 				margin: 0;
 				color: #FFF;
 				font-family: @robotoC;
-				font-size: 18px;
-				line-height: 25px;
+				font-size: 18/@fonSiz;
+				line-height: 30/@fonSiz;
 				text-align: center;
 				letter-spacing: 0.05em;
 			}		
@@ -491,20 +508,19 @@ body,
 			p:first-child::after{
 				content:'';
 				display: block;
-				position: absolute;
+				position: relative;
 				width: 15px;
 				height: 13px;
 				background: url(../img/down_quote.png);
-				left: 910px;
-				top: 142px;
+				margin: 0 0 0 100%;
 			}
 			p:last-child{
 				height: 19px;
 				padding: 0;
 				margin: 23px 0 0 0;
 				font-weight: bold;
-				font-size: 20px;
-				line-height: 23px;
+				font-size: 20/@fonSiz;
+				line-height: 23/@fonSiz;
 				text-align: right;
 			}	
 		}
@@ -515,7 +531,7 @@ body,
 		justify-content: space-between;
 		align-items: baseline;
 		position: relative;
-		width: 151px;
+		width: 151*@curWid;
 		height: 43px;
 		margin: 0 auto;
 		.smallText,
@@ -524,18 +540,18 @@ body,
 			font-family: @robotoC;
 			font-style: normal;
 			font-weight: normal;
-			font-size: 16px;
-			line-height: 19px;
+			font-size: 16/@fonSiz;
+			line-height: 19/@fonSiz;
 			letter-spacing: 0.05em;			
 		}
 		.bigText{
-			font-size: 36px;
-			line-height: 42px;
+			font-size: 36/@fonSiz;
+			line-height: 42/@fonSiz;
 		}
 	}
 }
 .brand{
-	width: 794px;
+	width: 794*@curWid;
 	height: 206px;
 	padding: 0;
 	margin: 44px auto 51px auto;
@@ -546,8 +562,8 @@ body,
 		color: #000;
 		font-family: @robotoC;
 		font-weight: bold;
-		font-size: 22px;
-		line-height: 26px;
+		font-size: 22/@fonSiz;
+		line-height: 26/@fonSiz;
 		text-align: left;
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
@@ -555,7 +571,7 @@ body,
 			display: none;
 		}
 	}
-	div{
+	&>div{
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -563,7 +579,7 @@ body,
 		margin: 0;
 		border: solid 1px #E5E5E5;
 		img{
-			width: 97px;
+			width: 97*100/794%;
 			margin: 0;
 		}
 		.border-right{
@@ -585,8 +601,8 @@ body,
 		color: #000;
 		font-family: @roboto;
 		font-weight: bold;
-		font-size: 22px;
-		line-height: 26px;
+		font-size: 22/@fonSiz;
+		line-height: 26/@fonSiz;
 		text-align: center;
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
@@ -595,7 +611,7 @@ body,
 		display: flex;
 		flex-direction: column;
 		position: relative;
-		width: 970px;
+		width: 970*@curWid;
 		height: 609px;
 		margin: 0 auto;
 		background: #FFF;
@@ -624,28 +640,28 @@ body,
 				position: relative;
 			}
 			p:first-child{
-				width: 53px;
+				width: 53*100/970%;
 				height: 50px;
-				padding-left: 31px;
+				padding-left: 3.1%;
 				padding-top: 15px;
 				color: #DEDDDD;
 				font-family: @roboto;
 				font-style: normal;
 				font-weight: 900;
-				font-size: 42px;
-				line-height: 49px;
+				font-size: 42/@fonSiz;
+				line-height: 49/@fonSiz;
 				text-transform: uppercase;
 			}
 			p:nth-child(2){
-				width: 783px;
+				width: 783*100/970%;
 				height: 42px;
-				padding-left: 32px;
+				padding-left: 3.1%;
 				padding-top: 27px;
 				color: #000;
 				font-family: @robotoC;
 				font-weight: bold;
-				font-size: 20px;
-				line-height: 23px;
+				font-size: 20/@fonSiz;
+				line-height: 23/@fonSiz;
 				letter-spacing: 0.05em;
 				br{
 					display: none;
@@ -663,24 +679,24 @@ body,
 			.pActive{
 				width: 783px;
 				height: auto;
-				margin: 12px 0 12px 118px;
+				margin: 12px 0 12px 116*100/970%;
 				color: #000;
 				font-family: @robotoC;
 				font-style: normal;
 				font-weight: normal;
-				font-size: 16px;
-				line-height: 23px;
+				font-size: 16/@fonSiz;
+				line-height: 23/@fonSiz;
 				letter-spacing: 0.05em;
 			}
 		}
 	}
 	button{
-		width: 290px;
-		margin: 35px 0 0 475px;
+		width: 275*@curWid;
+		margin: 35px 0 0 467*@curWid;
 	}
 }
 .order2{
-	width: 1110px;
+	width: 1110*@curWid;
 	height: 197px;
 	position: relative;
 	padding: 0;
@@ -689,114 +705,108 @@ body,
 	box-shadow: none;
 	h3{
 		margin: 0 auto 29px auto;
-		font-size: 21px;
-		line-height: 25px;
+		font-size: 21/@fonSiz;
+		line-height: 25/@fonSiz;
 		text-transform: uppercase;
 	}
-	label{
-		.input-margin-top{
-			width: 100%;
-			width: 277px;
-		}
-		.input-margin{
-			display: inline-block;
-			width: 356px;
-		}
-	}
-	label:nth-child(2){
-		input{
-			position: absolute;
-			left: -50px;
-			top: 27px;
-		}
-	}
-	label:nth-child(3){
-		input{
-			position: absolute;
-			left: 280px;
-			top: 53px;
-		}
-	}
-	label:nth-child(4){
-		input{
-			position: absolute;
-			right: 0px;
-			top: 27px;
-		}
-	}
-	label:nth-child(5){
-		textarea{
-			width: 686px;
-			position: relative;
-			height: 30px;
-			right: 50px;
-			top: 41px;
-		}
-	}
-	.order2_button{
-	}
-	button{
-		width: 372px;
+	div:nth-child(2){
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		width: 100%;
 		position: relative;
-		height: 43px;
-		right: -670px;
-		top: -33px;
+		justify-content: space-between;
+		label{
+			width: 351*100/1110%;
+			margin: 0;
+			.input{
+				display: inline-block;
+				width: 94.5%;
+				padding-left: 14*100/300%;
+				margin: 0;
+			}
+		}
 	}
-	label:last-child{
+	div:nth-child(3){
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		position: relative;
+		label{
+			width: 728*100/1110%;
+			height: 43px;
+			margin: 24.46px 0 0 0;
+			textarea{
+				width: 97.5%;
+				height: 29px;
+				padding: 12px 0 0 7*100/300%;		
+				margin: 0;
+			}
+		}
+		button{
+			width: 350*100/1110%;
+			position: absolute;
+			height: 43px;
+			right: 0;
+			padding: 0;
+			margin: 24.46px 0 0 0;
+		}
+	}
+	&>label:last-child{
 		display: inline-block;
 		position: relative;
-		margin: 0 0 0 0;
+		margin: 18.89px 42.8% 0 auto;
 		color: #797979;	
 		font-family: @robotoC;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 12px;
-		line-height: 14px;
+		font-size: 12/@fonSiz;
+		line-height: 14/@fonSiz;
 		letter-spacing: 0.05em;
-		float: right;
-		top: 55.5px;
-		left: -488px;
+		float: right;;
 	}
 	input[type='checkbox']{
 			display: inline-block;
 			position: relative;
-			width: 11px;
+			width: 11*100/1110%;
 			height: 11px;
+			margin: 18px 0.1% 0 34.5%;
 			float: left;
-			bottom: -53px;
-			left: 330px;
 		}
 	input[type='checkbox']::before{
 			content: '';
 			display: block;
 			position: absolute;
-			width: 10px;
+			width: 70%;
 			height: 10px;
-			margin: 0 0 0 0;
+			margin: 0;
 			background: #fff;
 			border: solid 1px #E5E5E5;
 			border-radius: 2px;
 		}
 	input[type='checkbox']:checked::before{
-		width: 10px;
+		width: 70%;
 		height: 10px;
 		background: url(../img/v.png) #fff no-repeat;
-		background-size: content;
-		background-position: 2px 0;
+		background-size: 95%;
+		background-position: 0px 0;
 		}
 }
 .footer{
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	width: 100%;
+	width: 99.8%;
 	height: auto;
+	padding: 0;
 	margin: 0;
 	.contact{
 		display: block;
 		position: relative;
-		width: 100%;
+		width: 99.9%;
 		height: 477px;
+		padding: 0;
+		margin: 0;
 		.map{
 			width: 100%;
 			height: 351px;
@@ -807,42 +817,42 @@ body,
 			justify-content: space-between;
 			height: auto;
 			position: relative;
-			margin-left: 15px;
+			margin: 36px 0 0 0;
 			div{
 				display: flex;
 				flex-direction: column;
 			}
 			#phone{
-				width: 160px;
-				height: 62px;
-				margin: 0 0 0 -10px;
+				width: 140*@curWid;
+				height: 58px;
+				margin: 0 0 0 0.5%;
 			}
 			#adress{
-				width: 325px;
-				height: 90px;
+				width: 285*@curWid;
+				height: 78px;
 				margin: 0;
 			}
 			#email{
-				width: 173px;
-				height: 62px;
+				width: 150*@curWid;
+				height: 58px;
 				margin: 0;
 			}
 			#time{
-				width: 250px;
-				height: 90px;
-				margin: 0 10px 0 0;
+				width: 215*@curWid;
+				height: 78px;
+				margin: 0 0.5%	 0 0;
 			}
 		}
 		.contact-title,
 		.contact-discript{
 			display: inline-block;
 			width: 100%;
-			height: 90px;
+			height: auto;
 			color: #8C0014;
 			font-family: @robotoC;
 			font-weight: bold;
-			font-size: 20px;
-			line-height: 23px;
+			font-size: 20/@fonSiz;
+			line-height: 23/@fonSiz;
 			letter-spacing: 0.05em;
 			margin: 0;
 		}
@@ -852,7 +862,7 @@ body,
 		.contact-discript{
 			color: #000;
 			text-align: left;
-			margin: 0;
+			margin: 14px 0 0 0;
 			br:first-child{
 				display: none;
 			}
@@ -861,7 +871,7 @@ body,
 	.copyright{
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space-around;
 		width: 100%;
 		height: 37px;
 		margin: 27px 0 0 0;
@@ -875,15 +885,15 @@ body,
 			font-family: @robotoC;
 			font-style: normal;
 			font-weight: normal;
-			font-size: 13px;
-			line-height: 15px;
+			font-size: 13/@fonSiz;
+			line-height: 15/@fonSiz;
 			letter-spacing: 0.05em;
 		}
 		p:first-child{
-			margin:12px 13px 5px 13px;
+			margin:12px 65.5% 5px 0.5%;
 		}
 		p:last-child{
-			margin: 0 0 0 727px;
+			margin: 0;
 		}
 	}
 }

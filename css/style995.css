@@ -1,8 +1,8 @@
 .input {
-  width: 262px;
+  width: 61.17021277%;
   height: 40px;
-  padding-left: 13px;
-  margin: 26px 0 0 50px;
+  padding-left: 4.34782609%;
+  margin: 26px 0 0 18%;
   background: #f8f6f6;
   border: solid 1px #e2dede;
   border-radius: 2px;
@@ -10,47 +10,50 @@
 .input::-webkit-input-placeholder {
   color: #000;
   font-family: Roboto Condensed;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 1vw;
+  line-height: 1.14285714vw;
   letter-spacing: 0.05em;
 }
 .input:-ms-input-placeholder {
   color: #000;
   font-family: Roboto Condensed;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 1vw;
+  line-height: 1.14285714vw;
   letter-spacing: 0.05em;
 }
 .input::-ms-input-placeholder {
   color: #000;
   font-family: Roboto Condensed;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 1vw;
+  line-height: 1.14285714vw;
   letter-spacing: 0.05em;
 }
 .input::placeholder {
   color: #000;
   font-family: Roboto Condensed;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 1vw;
+  line-height: 1.14285714vw;
   letter-spacing: 0.05em;
 }
 .button {
-  width: 275px;
+  width: 64.62765957%;
   height: 40px;
-  margin: 26px 0 0 50px;
+  margin: 26px 0 0 18%;
   background: #8C0014;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
   border: none;
 }
+.button:hover {
+  cursor: pointer;
+}
 .buttonText {
   color: #FFF;
   font-family: Roboto Condensed;
   font-weight: bold;
-  font-size: 13px;
-  line-height: 15px;
+  font-size: 1.07692308vw;
+  line-height: 1.07142857vw;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -73,6 +76,7 @@ body,
   margin: 0;
   width: 100%;
   height: auto;
+  /* border:@bdef; */
 }
 .header {
   display: -webkit-box;
@@ -90,34 +94,54 @@ body,
   background-size: cover;
 }
 .header .menu {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
   width: 100%;
   height: 56px;
   padding: 0;
+  margin: 0;
   background: rgba(0, 0, 0, 0.45);
 }
-.header .menu h4 {
+.header .menu div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 18.416666667%;
+  margin: 0 0 0 0.5%;
+}
+.header .menu div:first-child h4 {
   display: inline-block;
   margin: 9px 0 0 0;
   color: #fff;
   font-family: Roboto Condensed;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 14px;
-  height: auto;
+  font-size: 1vw;
+  height: 1vw;
   float: left;
 }
-.header .menu p {
+.header .menu div:first-child p {
   display: inline-block;
-  margin: 28px 0 0 -170px;
+  margin: 7px 0 0 0;
   color: #fff;
   font-family: Roboto Condensed;
-  font-size: 13px;
+  font-size: 0.92857143vw;
   height: auto;
   float: left;
 }
-.header .menu div {
+.header .menu div:nth-child(2) {
   display: none;
 }
 .header .menu .navmenu {
@@ -132,9 +156,10 @@ body,
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  width: 471px;
-  padding: 0;
-  margin: 20px 0 0 350px;
+  width: 39.25%;
+  height: 1vw;
+  padding: 20px 0 0 0;
+  margin: 0 auto 0 10.75%;
   list-style-type: none;
 }
 .header .menu .navmenu > a {
@@ -145,8 +170,8 @@ body,
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 1vw;
+  line-height: 1.14285714vw;
   text-transform: uppercase;
 }
 .header .menu .navmenu > a:hover {
@@ -164,26 +189,29 @@ body,
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  width: 260px;
+  width: 21.33333333%;
+  height: 1.07142857vw;
   padding: 0;
-  margin: -18.5px 0 0 966px;
+  margin: 0 0.5% 0 0;
 }
 .header .menu .call a p {
   display: inline-block;
   color: #FFF;
   font-family: Roboto Condensed;
   font-weight: bold;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 1.07142857vw;
+  line-height: 1.28571429vw;
   text-transform: uppercase;
-  margin: 0;
+  margin: 19px 0 0 0;
 }
 .header .menu .call a p:first-child {
-  width: 100px;
+  width: 100%;
+  margin: 19px 3% 0 0;
 }
 .header .menu .call a p:last-child {
-  width: 129px;
-  font-size: 16px;
+  width: 100%;
+  margin: 19px 0 0 auto;
+  font-size: 1.14285714vw;
 }
 .header .menu .call > a:last-child {
   text-decoration: underline !important;
@@ -196,8 +224,8 @@ body,
   font-family: Roboto Condensed;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.28571429vw;
+  line-height: 1.5vw;
   letter-spacing: 0.05em;
   text-align: center;
 }
@@ -208,8 +236,8 @@ body,
   font-family: Roboto Condensed;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 3.42857143vw;
+  line-height: 4vw;
   letter-spacing: 0.08em;
   text-align: center;
 }
@@ -222,13 +250,13 @@ body,
   color: #FFF;
   font-family: Roboto;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1.14285714vw;
+  line-height: 1.35714286vw;
   text-align: center;
   letter-spacing: 0.05em;
 }
 .header button {
-  width: 165px;
+  width: 13.75%;
   height: 41px;
   margin: 0 auto;
   border: solid 2px #fff;
@@ -240,7 +268,7 @@ body,
   font-family: Roboto Condensed;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 1vw;
 }
 .header button:hover {
   cursor: pointer;
@@ -249,10 +277,10 @@ body,
 .order2 {
   display: block;
   position: relative;
-  width: 376px;
-  height: 447px;
+  width: 31.33333333%;
+  height: 484px;
   padding: 0;
-  margin: -68px 0 0 851px;
+  margin: -59px 0.5% 0 auto;
   background: #fff;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -267,8 +295,8 @@ body,
   color: #000;
   font-family: Roboto Condensed;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 1.42857143vw;
+  line-height: 1.64285714vw;
   letter-spacing: 0.05em;
   text-align: center;
 }
@@ -282,14 +310,10 @@ body,
   height: 24px;
   color: #000;
   font-family: Roboto Condensed;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1.14285714vw;
+  line-height: 1.35714286vw;
   letter-spacing: 0.05em;
   text-align: center;
-}
-.order1 label:nth-child(3) input,
-.order2 label:nth-child(3) input {
-  margin: 0px 0 0 50px;
 }
 .order1 label:nth-child(5) textarea,
 .order2 label:nth-child(5) textarea {
@@ -301,8 +325,8 @@ body,
   color: #FFF;
   font-family: Roboto Condensed;
   font-weight: bold;
-  font-size: 13px;
-  line-height: 15px;
+  font-size: 1.07692308vw;
+  line-height: 1.07142857vw;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -318,10 +342,10 @@ body,
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  width: 749px;
+  width: 63.33333333%;
   height: 329px;
   padding: 0;
-  margin: -336px 0 0 50px;
+  margin: -382px 33.33333333% 97px auto;
 }
 .whyWe h3 {
   display: inline-block;
@@ -330,8 +354,8 @@ body,
   color: #000;
   font-family: Roboto Condensed;
   font-weight: bold;
-  font-size: 21px;
-  line-height: 25px;
+  font-size: 1.5vw;
+  line-height: 1.78571429vw;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   text-align: left;
@@ -339,28 +363,28 @@ body,
 .whyWe .whyWeDescription {
   display: block;
   position: relative;
-  width: inherit;
+  width: 100%;
   height: 79px;
   padding: 0;
   margin: 0;
 }
 .whyWe .whyWeDescription img {
   float: left;
-  width: 48px;
+  width: 6.31578947%;
   height: 48px;
   margin: 3px 0 0 0;
 }
 .whyWe .whyWeDescription h4 {
   float: right;
   display: inline-block;
-  width: 675px;
+  width: 82.89473684%;
   padding-left: 22px;
-  margin: 3px 0 0 0;
+  margin: 3px 4.47368421% 0 auto;
   color: #000;
   font-family: Roboto Condensed;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 1.42857143vw;
+  line-height: 1.64285714vw;
   letter-spacing: 0.05em;
 }
 .whyWe .whyWeDescription h4 br {
@@ -370,13 +394,13 @@ body,
   float: right;
   display: inline-block;
   position: relative;
-  width: 675px;
+  width: 87.36842105%;
   padding-left: 22px;
   margin: 3px 0 0 0;
   color: #000;
   font-family: Roboto Condensed;
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 1.14285714vw;
+  line-height: 1.5vw;
   letter-spacing: 0.05em;
 }
 .whyWe > .whyWeDescription:nth-child(2) {
@@ -403,8 +427,8 @@ body,
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 1.57142857vw;
+  line-height: 1.85714286vw;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -413,7 +437,7 @@ body,
   display: none;
 }
 .price > div {
-  width: 970px;
+  width: 80.83333333%;
   padding: 0;
   margin: 30px auto 0 auto;
   -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
@@ -430,9 +454,9 @@ body,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 650px;
+  width: 67.01030928%;
   height: inherit;
-  padding: 0 0 0 33px;
+  padding: 0 0 0 3.40206186%;
   margin: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -443,17 +467,17 @@ body,
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 1vw;
+  line-height: 1.28571429vw;
   letter-spacing: 0.05em;
 }
 .price > div div p:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 250px;
+  width: 25.77319588%;
   height: inherit;
-  padding-left: 33px;
+  padding-left: 3.40206186%;
   margin: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -462,8 +486,8 @@ body,
   color: #000;
   font-family: Roboto Condensed;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 1vw;
+  line-height: 1.28571429vw;
   letter-spacing: 0.05em;
 }
 .price > div div:first-child {
@@ -478,18 +502,19 @@ body,
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1.14285714vw;
+  line-height: 1.35714286vw;
   letter-spacing: 0.05em;
   border: none;
 }
 .price > div div:first-child p:first-child {
-  width: 650px;
+  width: 67.01030928%;
 }
 .price > div div:first-child p:last-child {
-  width: 250px;
+  width: 25.77319588%;
 }
 .price button {
+  width: 22.91666667%;
   margin: 32px auto 0 auto;
 }
 .opinion {
@@ -512,8 +537,8 @@ body,
   color: #FFF;
   font-family: Roboto Condensed;
   font-weight: bold;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 1.57142857vw;
+  line-height: 1.85714286vw;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -533,21 +558,21 @@ body,
 .opinion .opinionSlider #p3 {
   display: inline-block;
   position: absolute;
-  width: 904px;
-  height: 204px;
-  margin: 0 0 0 160px;
+  width: 66.66666667%;
+  height: 196px;
+  margin: 0 0 0 16.5%;
   padding: 0;
 }
 .opinion .opinionSlider #p3 p {
   display: inline-block;
-  width: 904px;
-  height: 143px;
+  width: 100%;
+  height: 135px;
   padding: 0;
   margin: 0;
   color: #FFF;
   font-family: Roboto Condensed;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 1.28571429vw;
+  line-height: 2.14285714vw;
   text-align: center;
   letter-spacing: 0.05em;
 }
@@ -564,20 +589,19 @@ body,
 .opinion .opinionSlider #p3 p:first-child::after {
   content: '';
   display: block;
-  position: absolute;
+  position: relative;
   width: 15px;
   height: 13px;
   background: url(../img/down_quote.png);
-  left: 910px;
-  top: 142px;
+  margin: 0 0 0 100%;
 }
 .opinion .opinionSlider #p3 p:last-child {
   height: 19px;
   padding: 0;
   margin: 23px 0 0 0;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 1.42857143vw;
+  line-height: 1.64285714vw;
   text-align: right;
 }
 .opinion .page {
@@ -595,7 +619,7 @@ body,
       -ms-flex-align: baseline;
           align-items: baseline;
   position: relative;
-  width: 151px;
+  width: 12.58333333%;
   height: 43px;
   margin: 0 auto;
 }
@@ -605,16 +629,16 @@ body,
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1.14285714vw;
+  line-height: 1.35714286vw;
   letter-spacing: 0.05em;
 }
 .opinion .page .bigText {
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 2.57142857vw;
+  line-height: 3vw;
 }
 .brand {
-  width: 794px;
+  width: 66.16666667%;
   height: 206px;
   padding: 0;
   margin: 44px auto 51px auto;
@@ -626,8 +650,8 @@ body,
   color: #000;
   font-family: Roboto Condensed;
   font-weight: bold;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 1.57142857vw;
+  line-height: 1.85714286vw;
   text-align: left;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -635,7 +659,7 @@ body,
 .brand h4 br {
   display: none;
 }
-.brand div {
+.brand > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -649,14 +673,14 @@ body,
   margin: 0;
   border: solid 1px #E5E5E5;
 }
-.brand div img {
-  width: 97px;
+.brand > div img {
+  width: 12.21662469%;
   margin: 0;
 }
-.brand div .border-right {
+.brand > div .border-right {
   border-right: solid 1px #E5E5E5;
 }
-.brand div .border-down {
+.brand > div .border-down {
   border-bottom: solid 1px #E5E5E5;
 }
 .answers {
@@ -671,8 +695,8 @@ body,
   color: #000;
   font-family: Roboto;
   font-weight: bold;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 1.57142857vw;
+  line-height: 1.85714286vw;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -686,7 +710,7 @@ body,
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  width: 970px;
+  width: 80.83333333%;
   height: 609px;
   margin: 0 auto;
   background: #FFF;
@@ -724,28 +748,28 @@ body,
   position: relative;
 }
 .answers > div div p:first-child {
-  width: 53px;
+  width: 5.46391753%;
   height: 50px;
-  padding-left: 31px;
+  padding-left: 3.1%;
   padding-top: 15px;
   color: #DEDDDD;
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
-  font-size: 42px;
-  line-height: 49px;
+  font-size: 3vw;
+  line-height: 3.5vw;
   text-transform: uppercase;
 }
 .answers > div div p:nth-child(2) {
-  width: 783px;
+  width: 80.72164948%;
   height: 42px;
-  padding-left: 32px;
+  padding-left: 3.1%;
   padding-top: 27px;
   color: #000;
   font-family: Roboto Condensed;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 1.42857143vw;
+  line-height: 1.64285714vw;
   letter-spacing: 0.05em;
 }
 .answers > div div p:nth-child(2) br {
@@ -763,21 +787,21 @@ body,
 .answers > div div .pActive {
   width: 783px;
   height: auto;
-  margin: 12px 0 12px 118px;
+  margin: 12px 0 12px 11.95876289%;
   color: #000;
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 1.14285714vw;
+  line-height: 1.64285714vw;
   letter-spacing: 0.05em;
 }
 .answers button {
-  width: 290px;
-  margin: 35px 0 0 475px;
+  width: 22.91666667%;
+  margin: 35px 0 0 38.91666667%;
 }
 .order2 {
-  width: 1110px;
+  width: 92.5%;
   height: 197px;
   position: relative;
   padding: 0;
@@ -788,88 +812,106 @@ body,
 }
 .order2 h3 {
   margin: 0 auto 29px auto;
-  font-size: 21px;
-  line-height: 25px;
+  font-size: 1.5vw;
+  line-height: 1.78571429vw;
   text-transform: uppercase;
 }
-.order2 label .input-margin-top {
+.order2 div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 100%;
-  width: 277px;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.order2 label .input-margin {
+.order2 div:nth-child(2) label {
+  width: 31.62162162%;
+  margin: 0;
+}
+.order2 div:nth-child(2) label .input {
   display: inline-block;
-  width: 356px;
+  width: 94.5%;
+  padding-left: 4.66666667%;
+  margin: 0;
 }
-.order2 label:nth-child(2) input {
-  position: absolute;
-  left: -50px;
-  top: 27px;
-}
-.order2 label:nth-child(3) input {
-  position: absolute;
-  left: 280px;
-  top: 53px;
-}
-.order2 label:nth-child(4) input {
-  position: absolute;
-  right: 0px;
-  top: 27px;
-}
-.order2 label:nth-child(5) textarea {
-  width: 686px;
+.order2 div:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
-  height: 30px;
-  right: 50px;
-  top: 41px;
 }
-.order2 button {
-  width: 372px;
-  position: relative;
+.order2 div:nth-child(3) label {
+  width: 65.58558559%;
   height: 43px;
-  right: -670px;
-  top: -33px;
+  margin: 24.46px 0 0 0;
 }
-.order2 label:last-child {
+.order2 div:nth-child(3) label textarea {
+  width: 97.5%;
+  height: 29px;
+  padding: 12px 0 0 2.33333333%;
+  margin: 0;
+}
+.order2 div:nth-child(3) button {
+  width: 31.53153153%;
+  position: absolute;
+  height: 43px;
+  right: 0;
+  padding: 0;
+  margin: 24.46px 0 0 0;
+}
+.order2 > label:last-child {
   display: inline-block;
   position: relative;
-  margin: 0 0 0 0;
+  margin: 18.89px 42.8% 0 auto;
   color: #797979;
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 0.85714286vw;
+  line-height: 1vw;
   letter-spacing: 0.05em;
   float: right;
-  top: 55.5px;
-  left: -488px;
 }
 .order2 input[type='checkbox'] {
   display: inline-block;
   position: relative;
-  width: 11px;
+  width: 0.99099099%;
   height: 11px;
+  margin: 18px 0.1% 0 34.5%;
   float: left;
-  bottom: -53px;
-  left: 330px;
 }
 .order2 input[type='checkbox']::before {
   content: '';
   display: block;
   position: absolute;
-  width: 10px;
+  width: 70%;
   height: 10px;
-  margin: 0 0 0 0;
+  margin: 0;
   background: #fff;
   border: solid 1px #E5E5E5;
   border-radius: 2px;
 }
 .order2 input[type='checkbox']:checked::before {
-  width: 10px;
+  width: 70%;
   height: 10px;
   background: url(../img/v.png) #ffffff no-repeat;
-  background-size: content;
-  background-position: 2px 0;
+  background-size: 95%;
+  background-position: 0px 0;
 }
 .footer {
   display: -webkit-box;
@@ -880,15 +922,18 @@ body,
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  width: 100%;
+  width: 99.8%;
   height: auto;
+  padding: 0;
   margin: 0;
 }
 .footer .contact {
   display: block;
   position: relative;
-  width: 100%;
+  width: 99.9%;
   height: 477px;
+  padding: 0;
+  margin: 0;
 }
 .footer .contact .map {
   width: 100%;
@@ -907,7 +952,7 @@ body,
           justify-content: space-between;
   height: auto;
   position: relative;
-  margin-left: 15px;
+  margin: 36px 0 0 0;
 }
 .footer .contact > div:nth-child(2) div {
   display: -webkit-box;
@@ -919,35 +964,35 @@ body,
           flex-direction: column;
 }
 .footer .contact > div:nth-child(2) #phone {
-  width: 160px;
-  height: 62px;
-  margin: 0 0 0 -10px;
+  width: 11.66666667%;
+  height: 58px;
+  margin: 0 0 0 0.5%;
 }
 .footer .contact > div:nth-child(2) #adress {
-  width: 325px;
-  height: 90px;
+  width: 23.75%;
+  height: 78px;
   margin: 0;
 }
 .footer .contact > div:nth-child(2) #email {
-  width: 173px;
-  height: 62px;
+  width: 12.5%;
+  height: 58px;
   margin: 0;
 }
 .footer .contact > div:nth-child(2) #time {
-  width: 250px;
-  height: 90px;
-  margin: 0 10px 0 0;
+  width: 17.91666667%;
+  height: 78px;
+  margin: 0 0.5%	 0 0;
 }
 .footer .contact .contact-title,
 .footer .contact .contact-discript {
   display: inline-block;
   width: 100%;
-  height: 90px;
+  height: auto;
   color: #8C0014;
   font-family: Roboto Condensed;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 1.42857143vw;
+  line-height: 1.64285714vw;
   letter-spacing: 0.05em;
   margin: 0;
 }
@@ -957,7 +1002,7 @@ body,
 .footer .contact .contact-discript {
   color: #000;
   text-align: left;
-  margin: 0;
+  margin: 14px 0 0 0;
 }
 .footer .contact .contact-discript br:first-child {
   display: none;
@@ -970,9 +1015,8 @@ body,
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
   height: 37px;
   margin: 27px 0 0 0;
@@ -987,14 +1031,14 @@ body,
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: normal;
-  font-size: 13px;
-  line-height: 15px;
+  font-size: 0.92857143vw;
+  line-height: 1.07142857vw;
   letter-spacing: 0.05em;
 }
 .footer .copyright p:first-child {
-  margin: 12px 13px 5px 13px;
+  margin: 12px 65.5% 5px 0.5%;
 }
 .footer .copyright p:last-child {
-  margin: 0 0 0 727px;
+  margin: 0;
 }
 /*# sourceMappingURL=style995.css.map */
