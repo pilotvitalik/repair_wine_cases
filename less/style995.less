@@ -72,21 +72,13 @@ body,
 	margin: 0;
 	background: url(../img/header_desktop.jpg) no-repeat;
 	background-size: cover;	
-	.menu{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		position: relative;
-		width: 100%;
-		height: 56px;
-		padding: 0;
-		margin: 0;
-		background: rgba(0,0,0,0.45);
-		div:first-child{
+	div:first-child{
 			display: flex;
 			flex-direction: column;
 			width: 18.416666667%;
 			margin: 0 0 0 0.5%;
+			position: absolute;
+			z-index: 111;
 			h4{
 			display: inline-block;
 			margin: 9px 0 0 0;
@@ -108,33 +100,52 @@ body,
 				float: left;
 			}
 		}
-		div:nth-child(2){
-			display: none;		
-		}
-		.navmenu{
+	.menu{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		position: relative;
+		width: 100%;
+		height: 56px;
+		padding: 0;
+		margin: 0;
+		background: rgba(0,0,0,0.45);
+		.mobMenu{
 			display: flex;
 			flex-direction: row;
-			justify-content: space-between;
 			position: relative;
 			width: 471*@curWid;
 			height: @px14;
 			padding: 20px 0 0 0;
-			margin:0 auto 0 129*100/1200%;
-			list-style-type: none;
-			&>a{
-				text-decoration: none;
-				li{
-					color: #FFF;
-					font-family: @robotoC;
-					font-style: normal;
-					font-weight: bold;
-					font-size: @px14;
-					line-height: @px14*1.142857143;
-					text-transform: uppercase;
-				}
+			margin: 0 auto 0 18.416666667+129*100/1200%;
+			div:first-child{
+				display: none;		
 			}
-			&>a:hover{
-				cursor: pointer;
+			.navmenu{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				position: relative;
+				width: 100%;
+				height: @px14;
+				padding: 0;
+				margin:0;
+				list-style-type: none;
+				&>a{
+					text-decoration: none;
+					li{
+						color: #FFF;
+						font-family: @robotoC;
+						font-style: normal;
+						font-weight: bold;
+						font-size: @px14;
+						line-height: @px14*1.142857143;
+						text-transform: uppercase;
+					}
+				}
+				&>a:hover{
+					cursor: pointer;
+				}
 			}
 		}
 		.call{
@@ -826,9 +837,10 @@ body,
 		height: 477px;
 		padding: 0;
 		margin: 0;
-		.map{
+		#googleMap{
 			width: 100%;
 			height: 351px;
+
 		}
 		&>div:nth-child(2){
 			display: flex;

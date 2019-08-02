@@ -89,21 +89,15 @@ body,
   background: url(../img/header_desktop_m.jpg) no-repeat;
   background-size: cover;
 }
-.header .menu {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 56px;
-  padding: 0;
-  background: rgba(0, 0, 0, 0.45);
-}
-.header .menu div:first-child {
+.header div:first-child {
   width: 221px;
   margin: 0 0 0 15px;
+  position: absolute;
+  z-index: 111;
 }
-.header .menu div:first-child h4 {
+.header div:first-child h4 {
   display: inline-block;
-  margin: 9px 0 0 0	;
+  margin: 9px 0 0 0;
   color: #fff;
   font-family: Roboto Condensed;
   text-transform: uppercase;
@@ -111,7 +105,7 @@ body,
   font-size: 14px;
   height: auto;
 }
-.header .menu div:first-child p {
+.header div:first-child p {
   display: inline-block;
   margin: 2px 0 0 0;
   color: #fff;
@@ -120,7 +114,22 @@ body,
   font-size: 13px;
   height: auto;
 }
-.header .menu div:nth-child(2) {
+.header .menu {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 56px;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+.header .menu .mobMenu {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  float: right;
+}
+.header .menu .mobMenu div:first-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,14 +146,35 @@ body,
   top: 17.14px;
   right: 15px;
 }
-.header .menu div:nth-child(2) span {
+.header .menu .mobMenu div:first-child span {
   display: inline-block;
   width: 100%;
   height: 3px;
   background: #fff;
 }
-.header .menu .navmenu {
+.header .menu .mobMenu .navmenu {
   display: none;
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  padding: 0;
+  margin: 45px 0 0 0;
+  background: #57626f;
+}
+.header .menu .mobMenu .navmenu a {
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+.header .menu .mobMenu .navmenu a li {
+  list-style-type: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: Roboto Condensed;
+  padding: 7px 0;
+}
+.header .menu .mobMenu .displayBlock {
+  display: block;
 }
 .header .menu .call {
   display: none;
@@ -164,6 +194,7 @@ body,
 }
 .header h3 {
   display: inline-block;
+  width: 99.6%;
   margin: 0 auto;
   color: #fff;
   font-family: Roboto Condensed;
@@ -694,7 +725,7 @@ body,
   line-height: 21px;
   letter-spacing: 0.05em;
 }
-.answers > div div .playNone {
+.answers > div div .displayNone {
   display: none;
 }
 .answers > div div .colorActive {
@@ -842,7 +873,7 @@ body,
   width: 100%;
   height: auto;
 }
-.footer .contact .map {
+.footer .contact #googleMap {
   width: 100%;
   height: 292px;
 }
@@ -906,5 +937,13 @@ body,
 }
 .footer .copyright p:last-child {
   margin: 0 82px 0 82px;
+}
+.price,
+.opinion,
+.brand,
+.answers,
+.order2,
+.footer {
+  display: none;
 }
 /*# sourceMappingURL=iphone.css.map */

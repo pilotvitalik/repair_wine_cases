@@ -31,5 +31,5 @@ function autoslider(){
 			}
 			start();
 			autoslider();
-	}, 1000);
+	}, 5000);
 }

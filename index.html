@@ -11,24 +11,26 @@
 <body>
 	<div class='wrapper'>
 		<div class='header'>
-			<div class='menu'>
-				<div>
+			<div>
 					<h4>Сервиcный центр 24 часа</h4>
 					<p>Ремонт и обслуживание винных шкафов</p>
+			</div>
+			<div class='menu'>
+				<div class='mobMenu'>
+					<div>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<ul class='navmenu'>
+						<a href='#'><li>Главная</li></a>
+						<a href='#'><li>О нас</li></a>
+						<a href='#'><li>Услуги</li></a>
+						<a href='#'><li>Акции</li></a>
+						<a href='#'><li>Контакты</li></a>
+						<a href='#'><li>Прайс-лист</li></a>
+					</ul>
 				</div>
-				<div>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<ul class='navmenu'>
-					<a href='#'><li>Главная</li></a>
-					<a href='#'><li>О нас</li></a>
-					<a href='#'><li>Услуги</li></a>
-					<a href='#'><li>Акции</li></a>
-					<a href='#'><li>Контакты</li></a>
-					<a href='#'><li>Прайс-лист</li></a>
-				</ul>
 				<div class='call'>
 					<a href='#'><p>8 (812) 345 67 90</p></a>
 					<a href='#'><p>Заказать звонок</p></a>
@@ -186,10 +188,6 @@
 					<img class='border-rightI border-downI border-left' src='img/brand_desktop/dometic.png' alt='dometic'>
 				</div>
 			</div>
-
-
-
-
 			<div class='answers'>
 				<h4>Ответы на частые вопросы</h4>
 				<div class='answers-preview heigthAuto'  id='t4'>
@@ -228,10 +226,6 @@
 				</div>
 				<button class='button buttonText' type='submit'>Задать вопрос</button>
 			</div>
-
-
-
-
 			<form class='order2' action='order_down.php' method='post'>
 				<h3>Оставьте заявку и мы<br> вам перезвоним!</h3>
 				<div>
@@ -258,7 +252,7 @@
 		</div>
 		<div class='footer'>
 			<div class='contact'>
-				<div class='map'>
+				<div id='googleMap'>
 				</div>
 				<div>
 					<div id='phone'>
@@ -288,5 +282,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src='js/slider.js' defer></script>
 <script src='js/answer.js' defer></script>
+<!-- <script>
+function initMap() {
+  var uluru = {lat: 59.914024, lng: 30.329513};
+    var map = new google.maps.Map(
+      document.getElementById('googleMap'), {zoom: 15, center: uluru});
+    var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_YjdFtV-G7prStFpDZJ8yElJIA6X_b90&callback=initMap"
+   defer></script>
 </body>
 </html>
