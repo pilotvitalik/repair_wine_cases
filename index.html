@@ -39,7 +39,7 @@
 			<h4>РЕМОНТ И ОБСЛУЖИВАНИЕ</h4>
 			<h3>ВИННЫХ ШКАФОВ <br>И ВИННОТЕК</h3>	
 			<h5>Мы работаем круглосуточно. По всей Москве и Московской области.<br>Доверьте свою технику профессионалам!</h5>
-			<button type='button'>ВЫЗВАТЬ МАСТЕРА</button>
+			<button type='button' href='#feedback_click'>ВЫЗВАТЬ МАСТЕРА</button>
 		</div>
 		<div class='common'>
 			<form class='order1' action='order.php' method='post'>
@@ -158,7 +158,6 @@
 						</div>
 					</div>
 				</div>
-
 				<div class='page'>
 					<span class='bigText'>01</span>
 					<span class='bigText'>02</span>
@@ -226,11 +225,11 @@
 				</div>
 				<button class='button buttonText' type='submit'>Задать вопрос</button>
 			</div>
-			<form class='order2' action='order_down.php' method='post'>
+			<form class='order2' action='order_down.php' method='post' id='feedback_click'>
 				<h3>Оставьте заявку и мы<br> вам перезвоним!</h3>
 				<div>
 					<label>
-						<input class='input' type='text' name='name' placeholder='Ваше имя'>
+						<input class='input' type='text' name='name' placeholder='Ваше имя' id='feedback_name'>
 					</label>
 					<label>
 						<input class='input' type='tel' name='phone' placeholder='Телефонный номер'>
@@ -282,6 +281,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src='js/slider.js' defer></script>
 <script src='js/answer.js' defer></script>
+<script src='js/feeback_click.js' defer></script>
 <script>
 function initMap() {
   var uluru = {lat: 59.914024, lng: 30.329513};

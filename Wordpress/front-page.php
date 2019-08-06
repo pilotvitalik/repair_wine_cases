@@ -31,7 +31,7 @@
 			<h4>РЕМОНТ И ОБСЛУЖИВАНИЕ</h4>
 			<h3>ВИННЫХ ШКАФОВ <br>И ВИННОТЕК</h3>	
 			<h5>Мы работаем круглосуточно. По всей Москве и Московской области.<br>Доверьте свою технику профессионалам!</h5>
-			<button type='button'>ВЫЗВАТЬ МАСТЕРА</button>
+			<button type='button' href='#feedback_click'>ВЫЗВАТЬ МАСТЕРА</button>
 		</div>
 		<div class='common'>
           <form class='order1' action="<?php get_template_directory(); ?>/../../../order.php" method='post'>
@@ -218,11 +218,11 @@
 				</div>
 				<button class='button buttonText' type='submit'>Задать вопрос</button>
 			</div>
-			<form class='order2' action='order_down.php' method='post'>
+			<form class='order2' action='order_down.php' method='post' id='feedback_click'>
 				<h3>Оставьте заявку и мы<br> вам перезвоним!</h3>
 				<div>
 					<label>
-						<input class='input' type='text' name='name' placeholder='Ваше имя'>
+						<input class='input' type='text' name='name' placeholder='Ваше имя' id='feedback_name'>
 					</label>
 					<label>
 						<input class='input' type='tel' name='phone' placeholder='Телефонный номер'>

@@ -14,6 +14,8 @@ function load_scripts(){
   wp_enqueue_script('slider');
   wp_register_script('answer',get_template_directory_uri().'/js/answer.js',array(),1,'all');
   wp_enqueue_script('answer');
+  wp_register_script('feedback',get_template_directory_uri().'/js/feeback_click.js',array(),1,'all');
+  wp_enqueue_script('feedback');
 }
 
 add_action('wp_enqueue_scripts','load_scripts');
