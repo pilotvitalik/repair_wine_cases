@@ -3,7 +3,7 @@
 function load_stylesheets(){
   wp_register_style('iPhone',get_template_directory_uri().'/css/iphone.css',array(),1,'all');
   wp_enqueue_style('iPhone');
-  wp_register_style('desktop',get_template_directory_uri().'/css/style995.css',array(),1,'all');
+  wp_register_style('desktop',get_template_directory_uri().'/css/style995_1.css',array(),1,'all');
   wp_enqueue_style('desktop');
 }
 

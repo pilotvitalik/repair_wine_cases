@@ -23,7 +23,7 @@
 			</div>
 			<div class='copyright'>
 				<p>Сервисный центр по ремонту сервисных шкафов</p>
-				<p>Создание сайта - Trendspb</p>
+				<p>Создание сайта - Kozhushko and Co</p>
 			</div>
 		</div>
 	</div>
